@@ -5,10 +5,6 @@ services:
     networks:
       - proxy-net
     restart: unless-stopped
-
-# Pure static container, no host ports. The central reverse proxy in
-# fynn-koch-landingpage serves it at tanzschule.fynn-koch.de and routes
-# /api/ to the mail-service container.
 networks:
   proxy-net:
     name: proxy-net

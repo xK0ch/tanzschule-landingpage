@@ -8,7 +8,7 @@ pipeline {
   }
 
   tools {
-    nodejs '24.15.0'
+    nodejs '24.16.0'
   }
 
   stages {

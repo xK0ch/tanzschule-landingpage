@@ -1,8 +1,3 @@
-// Tanzschule Landingpage runtime
-// - sticky nav scroll state
-// - smooth scroll for in-page hash links
-// - contact form validation + simulated submit
-
 function initYear(): void {
   const y = document.getElementById('year');
   if (y) y.textContent = String(new Date().getFullYear());
@@ -95,7 +90,6 @@ function initContactForm(): void {
     if (btn) btn.disabled = true;
     if (lbl) lbl.textContent = 'Wird gesendet…';
 
-    // Maps to mail-service ContactRequest. Same-origin: nginx proxies /api/ to the service.
     const payload = {
       name: (form.elements.namedItem('name') as HTMLInputElement).value.trim(),
       email: (form.elements.namedItem('email') as HTMLInputElement).value.trim(),
